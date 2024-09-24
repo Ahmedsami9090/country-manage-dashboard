@@ -42,8 +42,6 @@ const countriesData = createSlice({
                 state.allCountries.filter((country) => country.id == payload.countryId ? country.englishName = payload.newEngName : '')
             }
         },
-        changeRegionStatus: (state, { payload }) => {
-        },
         addNewCountry: (state, { payload } : AddNewCountryInterface) => {
             state.allCountries.push(payload)
         },
@@ -60,4 +58,4 @@ const countriesData = createSlice({
     },
 })
 export default countriesData.reducer
-export const { changeCountryStatus, changeRegionStatus, addNewCountry, addNewRegion, setSelectedCountry, changeArbName, changeEngName } = countriesData.actions
+export const { changeCountryStatus, addNewCountry, addNewRegion, setSelectedCountry, changeArbName, changeEngName } = countriesData.actions
