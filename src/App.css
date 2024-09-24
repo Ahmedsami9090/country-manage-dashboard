@@ -1,0 +1,6 @@
+.active{
+    border-bottom: 2px solid rgb(6, 201, 201);
+}
+.right-to-left{
+    direction: rtl;
+}
